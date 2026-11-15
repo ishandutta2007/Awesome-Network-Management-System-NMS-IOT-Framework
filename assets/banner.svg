@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00c6ff" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Subdued Glow -->
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      fill: #94a3b8;
+      letter-spacing: 0.5px;
+    }
+    .badge-pill {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #38bdf8;
+    }
+
+    /* Ambient Pulsing & Flow Animations */
+    @keyframes pulseNode {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.4); opacity: 1; }
+    }
+    @keyframes dashMove {
+      from { stroke-dashoffset: 120; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+    }
+    @keyframes wavePulse {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      50% { transform: scale(1.15); opacity: 0.15; }
+      100% { transform: scale(0.9); opacity: 0.6; }
+    }
+
+    .node-p1 { animation: pulseNode 3s infinite ease-in-out; transform-origin: 1060px 100px; }
+    .node-p2 { animation: pulseNode 3.5s infinite ease-in-out 1s; transform-origin: 940px 220px; }
+    .node-p3 { animation: pulseNode 4s infinite ease-in-out 2s; transform-origin: 1120px 250px; }
+    .node-p4 { animation: pulseNode 3.2s infinite ease-in-out 0.5s; transform-origin: 120px 80px; }
+    .node-p5 { animation: pulseNode 3.8s infinite ease-in-out 1.5s; transform-origin: 80px 260px; }
+
+    .net-line {
+      stroke: #38bdf8;
+      stroke-width: 1.5;
+      stroke-dasharray: 6, 6;
+      animation: dashMove 15s linear infinite;
+      opacity: 0.45;
+    }
+    .floating-dot {
+      animation: floatParticle 6s ease-in-out infinite;
+    }
+    .sonar-ring {
+      transform-origin: 1040px 180px;
+      animation: wavePulse 5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1196" height="356" x="2" y="2" rx="15" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Dynamic Animated Background Mesh / Graph elements (Layered safely behind text) -->
+  <g opacity="0.65">
+    <!-- Sonar Radar Waves around IoT/Network Hub on Right -->
+    <circle class="sonar-ring" cx="1040" cy="180" r="110" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.3" stroke-dasharray="4, 4" />
+    <circle class="sonar-ring" cx="1040" cy="180" r="70" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.4" />
+
+    <!-- Connected Mesh Lines -->
+    <path class="net-line" d="M80 260 L120 80 L220 160 L100 240 Z" />
+    <path class="net-line" d="M940 220 L1060 100 L1120 250 L1040 180 Z" />
+    <path class="net-line" d="M940 220 L1040 180 L880 120" />
+    <path class="net-line" d="M120 80 L280 60" />
+
+    <!-- Network / IoT Nodes (Floating and Pulsing) -->
+    <circle cx="120" cy="80" r="5" fill="#38bdf8" class="node-p4" filter="url(#subtleGlow)" />
+    <circle cx="80" cy="260" r="4" fill="#818cf8" class="node-p5" filter="url(#subtleGlow)" />
+    <circle cx="220" cy="160" r="3" fill="#38bdf8" opacity="0.6" />
+    <circle cx="280" cy="60" r="4" fill="#0ea5e9" opacity="0.5" />
+
+    <circle cx="1060" cy="100" r="6" fill="#00f2fe" class="node-p1" filter="url(#glow)" />
+    <circle cx="940" cy="220" r="5" fill="#38bdf8" class="node-p2" filter="url(#glow)" />
+    <circle cx="1120" cy="250" r="5" fill="#818cf8" class="node-p3" filter="url(#glow)" />
+    <circle cx="1040" cy="180" r="9" fill="#38bdf8" filter="url(#glow)" />
+    <circle cx="880" cy="120" r="4" fill="#a78bfa" opacity="0.7" />
+
+    <!-- Floating Packet Particles -->
+    <circle cx="500" cy="50" r="2" fill="#38bdf8" class="floating-dot" />
+    <circle cx="720" cy="60" r="2.5" fill="#818cf8" class="floating-dot" style="animation-delay: 2s;" />
+    <circle cx="600" cy="310" r="2" fill="#38bdf8" class="floating-dot" style="animation-delay: 3s;" />
+    <circle cx="360" cy="300" r="1.5" fill="#a78bfa" class="floating-dot" style="animation-delay: 1.5s;" />
+  </g>
+
+  <!-- Foreground Content Block (Completely unobstructed and cleanly centered) -->
+  <g transform="translate(600, 0)" text-anchor="middle">
+    <!-- Top Pill Category Indicator -->
+    <g transform="translate(0, 52)">
+      <rect x="-190" y="0" width="380" height="32" rx="16" fill="#0f172a" stroke="#0284c7" stroke-width="1.2" opacity="0.95" />
+      <circle cx="-165" cy="16" r="4" fill="#38bdf8" class="node-p1" />
+      <text x="5" y="21" class="badge-pill" text-anchor="middle">🌐 NETWORK MANAGEMENT &amp; IOT FRAMEWORKS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" class="title-text" filter="url(#subtleGlow)">Awesome NMS &amp; IoT Framework</text>
+
+    <!-- Subtitle Description -->
+    <text x="0" y="195" class="subtitle-text">Curated Enterprise Observability, SNMP Polling, DCIM, IPAM &amp; IoT Device Platforms</text>
+
+    <!-- Capability Feature Badges / Highlights -->
+    <g transform="translate(0, 245)">
+      <!-- Badge 1: Network Monitoring -->
+      <g transform="translate(-250, 0)">
+        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">📡 SNMP &amp; Telemetry</text>
+      </g>
+      <!-- Badge 2: NSoT / DCIM -->
+      <g transform="translate(-85, 0)">
+        <rect x="-65" y="0" width="130" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">🗺️ DCIM &amp; IPAM</text>
+      </g>
+      <!-- Badge 3: IoT Broker -->
+      <g transform="translate(80, 0)">
+        <rect x="-65" y="0" width="130" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">⚡ MQTT &amp; Devices</text>
+      </g>
+      <!-- Badge 4: Open Source & SaaS -->
+      <g transform="translate(245, 0)">
+        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">🛡️ SaaS &amp; Open Source</text>
+      </g>
+    </g>
+
+    <!-- Bottom Accent Line -->
+    <rect x="-240" y="315" width="480" height="3" rx="1.5" fill="url(#accentGrad)" />
+  </g>
+</svg>
