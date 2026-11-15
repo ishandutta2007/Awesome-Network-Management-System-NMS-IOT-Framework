@@ -1,171 +1,179 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0f1d" />
-      <stop offset="50%" stop-color="#0d1b2a" />
-      <stop offset="100%" stop-color="#1b263b" />
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0b172a"/>
+      <stop offset="100%" stop-color="#020617"/>
     </linearGradient>
 
-    <!-- Accent Gradient -->
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#4facfe" />
-      <stop offset="100%" stop-color="#00c6ff" />
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
 
-    <!-- Glow Filter -->
+    <linearGradient id="meshGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <!-- Subdued Glow -->
-    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+    <!-- Tech Grid Background -->
+    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.08"/>
+      <circle cx="0" cy="0" r="1" fill="#38bdf8" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Animations (standard CSS keyframes supported across GitHub and SVG renderers) -->
+    <style>
+      @keyframes scanLine {
+        0% { transform: translateY(0px); opacity: 0.1; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(240px); opacity: 0.1; }
+      }
+      @keyframes circuitDash {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes beaconRing {
+        0% { r: 10px; opacity: 0.8; stroke-width: 2px; }
+        100% { r: 55px; opacity: 0; stroke-width: 0.5px; }
+      }
+      @keyframes pulseNode {
+        0%, 100% { opacity: 0.6; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.15); }
+      }
+      @keyframes floatNode {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+
+      .scanner { animation: scanLine 6s infinite linear; }
+      .circuit-line { stroke-dasharray: 8, 8; animation: circuitDash 10s infinite linear; }
+      .radar-sweep { transform-origin: 110px 120px; animation: radarSweep 8s infinite linear; }
+      .beacon { animation: beaconRing 2.8s infinite cubic-bezier(0.2, 0.8, 0.4, 1); }
+      .pulse-hub { animation: pulseNode 3s infinite ease-in-out; }
+      .floating-tag { animation: floatNode 4s infinite ease-in-out; }
+      .floating-hub { animation: floatNode 3.5s infinite ease-in-out 1s; }
+
+      .title-font {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+      }
+      .sub-font {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+      }
+    </style>
   </defs>
 
-  <style>
-    .title-text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 800;
-      font-size: 42px;
-      fill: #ffffff;
-      letter-spacing: -0.5px;
-    }
-    .subtitle-text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      fill: #94a3b8;
-      letter-spacing: 0.5px;
-    }
-    .badge-pill {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      fill: #38bdf8;
-    }
+  <!-- Base Card -->
+  <rect width="900" height="240" rx="16" fill="url(#bgGrad)"/>
+  <rect width="900" height="240" rx="16" fill="url(#cyberGrid)"/>
 
-    /* Ambient Pulsing & Flow Animations */
-    @keyframes pulseNode {
-      0%, 100% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.4); opacity: 1; }
-    }
-    @keyframes dashMove {
-      from { stroke-dashoffset: 120; }
-      to { stroke-dashoffset: 0; }
-    }
-    @keyframes floatParticle {
-      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
-      50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
-      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
-    }
-    @keyframes wavePulse {
-      0% { transform: scale(0.9); opacity: 0.6; }
-      50% { transform: scale(1.15); opacity: 0.15; }
-      100% { transform: scale(0.9); opacity: 0.6; }
-    }
+  <!-- Scanning Laser Line -->
+  <rect class="scanner" x="0" y="0" width="900" height="2" fill="url(#scanGrad)" opacity="0.5"/>
 
-    .node-p1 { animation: pulseNode 3s infinite ease-in-out; transform-origin: 1060px 100px; }
-    .node-p2 { animation: pulseNode 3.5s infinite ease-in-out 1s; transform-origin: 940px 220px; }
-    .node-p3 { animation: pulseNode 4s infinite ease-in-out 2s; transform-origin: 1120px 250px; }
-    .node-p4 { animation: pulseNode 3.2s infinite ease-in-out 0.5s; transform-origin: 120px 80px; }
-    .node-p5 { animation: pulseNode 3.8s infinite ease-in-out 1.5s; transform-origin: 80px 260px; }
+  <!-- Dynamic Network Data Flow Lines -->
+  <path class="circuit-line" d="M 110 120 L 210 120 L 240 75 L 340 75" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.35"/>
+  <path class="circuit-line" d="M 110 120 L 190 165 L 300 165" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.35"/>
+  <path class="circuit-line" d="M 870 50 L 790 50 L 760 90 L 670 90" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.25"/>
+  <path class="circuit-line" d="M 880 190 L 810 190 L 780 150 L 690 150" fill="none" stroke="#c084fc" stroke-width="1.5" opacity="0.25"/>
 
-    .net-line {
-      stroke: #38bdf8;
-      stroke-width: 1.5;
-      stroke-dasharray: 6, 6;
-      animation: dashMove 15s linear infinite;
-      opacity: 0.45;
-    }
-    .floating-dot {
-      animation: floatParticle 6s ease-in-out infinite;
-    }
-    .sonar-ring {
-      transform-origin: 1040px 180px;
-      animation: wavePulse 5s ease-in-out infinite;
-    }
-  </style>
+  <!-- Left: Network & IoT Radar Telemetry Hub -->
+  <g transform="translate(10, 0)">
+    <!-- Radar concentric rings -->
+    <circle cx="110" cy="120" r="75" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4,4"/>
+    <circle cx="110" cy="120" r="50" fill="none" stroke="#818cf8" stroke-width="1" stroke-opacity="0.25"/>
+    <circle cx="110" cy="120" r="28" fill="none" stroke="#c084fc" stroke-width="1" stroke-opacity="0.3"/>
 
-  <!-- Background Base -->
-  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
-  <rect width="1196" height="356" x="2" y="2" rx="15" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.6" />
+    <!-- Pulse beacon wave -->
+    <circle class="beacon" cx="110" cy="120" r="10" fill="none" stroke="#38bdf8"/>
 
-  <!-- Dynamic Animated Background Mesh / Graph elements (Layered safely behind text) -->
-  <g opacity="0.65">
-    <!-- Sonar Radar Waves around IoT/Network Hub on Right -->
-    <circle class="sonar-ring" cx="1040" cy="180" r="110" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.3" stroke-dasharray="4, 4" />
-    <circle class="sonar-ring" cx="1040" cy="180" r="70" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.4" />
+    <!-- Rotating Radar Scanner Beam -->
+    <g class="radar-sweep">
+      <path d="M 110 120 L 185 120 A 75 75 0 0 0 110 45 Z" fill="url(#meshGrad)" opacity="0.15"/>
+      <line x1="110" y1="120" x2="185" y2="120" stroke="#38bdf8" stroke-width="1.5" opacity="0.7"/>
+    </g>
 
-    <!-- Connected Mesh Lines -->
-    <path class="net-line" d="M80 260 L120 80 L220 160 L100 240 Z" />
-    <path class="net-line" d="M940 220 L1060 100 L1120 250 L1040 180 Z" />
-    <path class="net-line" d="M940 220 L1040 180 L880 120" />
-    <path class="net-line" d="M120 80 L280 60" />
-
-    <!-- Network / IoT Nodes (Floating and Pulsing) -->
-    <circle cx="120" cy="80" r="5" fill="#38bdf8" class="node-p4" filter="url(#subtleGlow)" />
-    <circle cx="80" cy="260" r="4" fill="#818cf8" class="node-p5" filter="url(#subtleGlow)" />
-    <circle cx="220" cy="160" r="3" fill="#38bdf8" opacity="0.6" />
-    <circle cx="280" cy="60" r="4" fill="#0ea5e9" opacity="0.5" />
-
-    <circle cx="1060" cy="100" r="6" fill="#00f2fe" class="node-p1" filter="url(#glow)" />
-    <circle cx="940" cy="220" r="5" fill="#38bdf8" class="node-p2" filter="url(#glow)" />
-    <circle cx="1120" cy="250" r="5" fill="#818cf8" class="node-p3" filter="url(#glow)" />
-    <circle cx="1040" cy="180" r="9" fill="#38bdf8" filter="url(#glow)" />
-    <circle cx="880" cy="120" r="4" fill="#a78bfa" opacity="0.7" />
-
-    <!-- Floating Packet Particles -->
-    <circle cx="500" cy="50" r="2" fill="#38bdf8" class="floating-dot" />
-    <circle cx="720" cy="60" r="2.5" fill="#818cf8" class="floating-dot" style="animation-delay: 2s;" />
-    <circle cx="600" cy="310" r="2" fill="#38bdf8" class="floating-dot" style="animation-delay: 3s;" />
-    <circle cx="360" cy="300" r="1.5" fill="#a78bfa" class="floating-dot" style="animation-delay: 1.5s;" />
+    <!-- Central Node Icon / Base -->
+    <g class="pulse-hub" transform="translate(110, 120)">
+      <circle cx="0" cy="0" r="16" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="url(#glow)"/>
+      <text x="0" y="5" font-size="14" text-anchor="middle">📡</text>
+    </g>
   </g>
 
-  <!-- Foreground Content Block (Completely unobstructed and cleanly centered) -->
-  <g transform="translate(600, 0)" text-anchor="middle">
-    <!-- Top Pill Category Indicator -->
-    <g transform="translate(0, 52)">
-      <rect x="-190" y="0" width="380" height="32" rx="16" fill="#0f172a" stroke="#0284c7" stroke-width="1.2" opacity="0.95" />
-      <circle cx="-165" cy="16" r="4" fill="#38bdf8" class="node-p1" />
-      <text x="5" y="21" class="badge-pill" text-anchor="middle">🌐 NETWORK MANAGEMENT &amp; IOT FRAMEWORKS</text>
+  <!-- Center-Left: Foreground Title & Content (Completely clear & unobstructed) -->
+  <g transform="translate(240, 0)">
+    <!-- Top Pill Tag -->
+    <g class="floating-tag" transform="translate(0, 32)">
+      <rect x="0" y="0" width="260" height="24" rx="12" fill="#0f172a" stroke="#0284c7" stroke-width="1.2" opacity="0.95"/>
+      <circle cx="14" cy="12" r="4" fill="#38bdf8"/>
+      <text x="26" y="16" fill="#38bdf8" font-size="10.5" class="sub-font" letter-spacing="1">OBSERVABILITY &amp; IOT PLATFORMS</text>
     </g>
 
     <!-- Main Title -->
-    <text x="0" y="145" class="title-text" filter="url(#subtleGlow)">Awesome NMS &amp; IoT Framework</text>
+    <text x="0" y="96" fill="url(#textGrad)" font-size="28" class="title-font" letter-spacing="0.5">
+      Awesome NMS &amp; IoT Framework
+    </text>
 
-    <!-- Subtitle Description -->
-    <text x="0" y="195" class="subtitle-text">Curated Enterprise Observability, SNMP Polling, DCIM, IPAM &amp; IoT Device Platforms</text>
+    <!-- Subtitle -->
+    <text x="0" y="128" fill="#94a3b8" font-size="13.5" class="sub-font">
+      Curated Network Management, Telemetry, SNMP, DCIM, IPAM &amp; IoT
+    </text>
 
-    <!-- Capability Feature Badges / Highlights -->
-    <g transform="translate(0, 245)">
-      <!-- Badge 1: Network Monitoring -->
-      <g transform="translate(-250, 0)">
-        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">📡 SNMP &amp; Telemetry</text>
-      </g>
-      <!-- Badge 2: NSoT / DCIM -->
-      <g transform="translate(-85, 0)">
-        <rect x="-65" y="0" width="130" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">🗺️ DCIM &amp; IPAM</text>
-      </g>
-      <!-- Badge 3: IoT Broker -->
-      <g transform="translate(80, 0)">
-        <rect x="-65" y="0" width="130" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">⚡ MQTT &amp; Devices</text>
-      </g>
-      <!-- Badge 4: Open Source & SaaS -->
-      <g transform="translate(245, 0)">
-        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-        <text x="0" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">🛡️ SaaS &amp; Open Source</text>
-      </g>
+    <!-- Feature Pillars / Badges -->
+    <g transform="translate(0, 160)">
+      <!-- Pill 1: SNMP & Telemetry -->
+      <rect x="0" y="0" width="130" height="26" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="65" y="17" fill="#bae6fd" font-size="11" text-anchor="middle" class="sub-font">📡 SNMP Polling</text>
+
+      <!-- Pill 2: DCIM & IPAM -->
+      <rect x="140" y="0" width="125" height="26" rx="6" fill="#0f172a" stroke="#818cf8" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="202" y="17" fill="#c7d2fe" font-size="11" text-anchor="middle" class="sub-font">🗺️ DCIM &amp; IPAM</text>
+
+      <!-- Pill 3: MQTT & IoT -->
+      <rect x="275" y="0" width="125" height="26" rx="6" fill="#0f172a" stroke="#c084fc" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="337" y="17" fill="#e9d5ff" font-size="11" text-anchor="middle" class="sub-font">⚡ MQTT &amp; Devices</text>
+
+      <!-- Pill 4: SaaS & Open Source -->
+      <rect x="410" y="0" width="145" height="26" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="482" y="17" fill="#a7f3d0" font-size="11" text-anchor="middle" class="sub-font">🌐 SaaS &amp; Open Source</text>
     </g>
-
-    <!-- Bottom Accent Line -->
-    <rect x="-240" y="315" width="480" height="3" rx="1.5" fill="url(#accentGrad)" />
   </g>
+
+  <!-- Right Decorative Telemetry Nodes -->
+  <g class="floating-hub" transform="translate(775, 45)">
+    <circle cx="50" cy="35" r="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" opacity="0.85"/>
+    <text x="50" y="40" font-size="14" text-anchor="middle">⚡</text>
+
+    <circle cx="15" cy="105" r="15" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" opacity="0.85"/>
+    <text x="15" y="110" font-size="12" text-anchor="middle">🌐</text>
+
+    <circle cx="75" cy="115" r="14" fill="#0f172a" stroke="#34d399" stroke-width="1.5" opacity="0.85"/>
+    <text x="75" y="120" font-size="11" text-anchor="middle">📊</text>
+
+    <!-- Node Connector Lines -->
+    <line x1="50" y1="35" x2="15" y2="105" stroke="#6366f1" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+    <line x1="50" y1="35" x2="75" y2="115" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+  </g>
+
+  <!-- Border Gradient Stroke -->
+  <rect x="1" y="1" width="898" height="238" fill="none" stroke="url(#textGrad)" stroke-width="1.5" rx="15" opacity="0.4"/>
 </svg>
