@@ -47,7 +47,7 @@
   - [FIWARE Orion 🏛️](#fiware-orion)
 - [📊 Comparison at a Glance](#-comparison-at-a-glance)
 - [📈 Star History](#-star-history)
-- [💖 Support & Sponsorship](#-support--sponsorship)
+- [💖 Support](#-support)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -249,21 +249,21 @@ Self-hosted, community-governed Network Management Systems, Infrastructure Obser
 
 ## 📈 Star History
 
-[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)
 
 ---
 
-## 💖 Support & Sponsorship
+## 💖 Support
 
-Thank you for visiting and using this curated list! 🙌
+A huge thank you to all the contributors, stargazers, and engineers using this curated directory! 🙌
 
-If this project has saved you research hours, helped you design your network monitoring stack, or assisted in your IoT architectural choices, please consider supporting the project:
+If this repository has helped you evaluate tools, build your Network Operations Center (NOC), or architect your IoT telemetry pipelines, please consider supporting the project:
 
-- 🌟 **Star the repository** to boost visibility and help others discover it.
-- 🍴 **Fork and share** the project with peers, colleagues, and DevOps communities.
-- ☕ **Buy me a coffee & sponsor development** via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+- ⭐ **Star the repository** on GitHub to help more developers and network engineers discover it.
+- 🍴 **Fork and share** this curated list with your team, peers, and tech communities.
+- ☕ **Buy me a coffee**: Support ongoing maintenance and research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
 
-Your sponsorship helps keep this directory actively maintained, fact-checked, and updated with emerging platforms! ❤️
+Every bit of support helps keep this guide comprehensive, up-to-date, and completely open-source! ❤️
 
 ---
 
