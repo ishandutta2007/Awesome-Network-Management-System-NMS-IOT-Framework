@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework?style=flat-square&logo=github" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework?style=flat-square&logo=github" alt="GitHub forks"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square" alt="License: CC0 1.0"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -78,136 +78,136 @@ Commercial, cloud-hosted Network Management, Infrastructure Observability, and I
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-governed Network Management Systems, Infrastructure Observability suites, and IoT Orchestration Frameworks. Sorted by GitHub star count in descending order: 🌟🛠️
+Self-hosted, community-governed Network Management Systems, Infrastructure Observability suites, and IoT Orchestration Frameworks. Sorted by GitHub Stars_Count in descending order: 🌟🛠️
 
 ### Grafana
-[![GitHub stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers)
 * **Repository:** [grafana/grafana](https://github.com/grafana/grafana) 📦
 * **Stack:** TypeScript / Go | **License:** AGPL-3.0 📜
 * **Overview:** Grafana is the open-source analytics and interactive visualization web application. It connects natively to Prometheus, InfluxDB, Elasticsearch, and SNMP telemetry collectors, allowing network engineers and IoT architects to compose dynamic multi-tenant dashboards and threshold-based alerts across heterogeneous data stores. 📊✨
 * **Best for:** Centralized visualization dashboards, multi-source observability, and cross-platform metric correlation.
 
 ### Prometheus
-[![GitHub stars](https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white)](https://github.com/prometheus/prometheus/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white)](https://github.com/prometheus/prometheus/stargazers)
 * **Repository:** [prometheus/prometheus](https://github.com/prometheus/prometheus) 📦
 * **Stack:** Go | **License:** Apache-2.0 📜
 * **Overview:** Prometheus is a CNCF-graduated open-source monitoring system and time-series database. Using a pull-based HTTP model, it polls targets via exporters (including SNMP Exporter and Blackbox Exporter), evaluates PromQL expressions, and dispatches real-time alerts via Alertmanager. ⏱️🚨
 * **Best for:** Cloud-native time-series metric collection, SNMP exporter polling, and PromQL-based alerting rules.
 
 ### Node-RED
-[![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)
 * **Repository:** [node-red/node-red](https://github.com/node-red/node-red) 📦
 * **Stack:** JavaScript / Node.js | **License:** Apache-2.0 📜
 * **Overview:** Node-RED is a low-code visual programming tool developed by the OpenJS Foundation for wiring together hardware devices, APIs, and online services. Its browser-based flow editor makes it an industry staple for connecting IoT sensor streams, Modbus/OPC-UA industrial controllers, and network webhook integrations. 🔀🎛️
 * **Best for:** Low-code IoT workflow wiring, Modbus/MQTT protocol translation, and event-driven automation pipelines.
 
 ### ThingsBoard
-[![GitHub stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers)
 * **Repository:** [thingsboard/thingsboard](https://github.com/thingsboard/thingsboard) 📦
 * **Stack:** Java / PostgreSQL / Cassandra / Hybrid | **License:** Apache-2.0 📜
 * **Overview:** ThingsBoard is the most popular open-source IoT platform for device management, data collection, processing, and real-time visualization. It supports industry-standard protocols including MQTT, CoAP, and HTTP, scaling horizontally to millions of devices with fault-tolerant clustering, customizable RPC remote control, and a drag-and-drop rule engine for event workflows. 📱⚡
 * **Best for:** Scalable IoT device orchestration, telemetry ingestion, digital twin tracking, and smart telemetry dashboards.
 
 ### Telegraf
-[![GitHub stars](https://img.shields.io/github/stars/influxdata/telegraf?style=social&color=white)](https://github.com/influxdata/telegraf/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/influxdata/telegraf?style=social&color=white)](https://github.com/influxdata/telegraf/stargazers)
 * **Repository:** [influxdata/telegraf](https://github.com/influxdata/telegraf) 📦
 * **Stack:** Go | **License:** MIT 📜
 * **Overview:** Telegraf is a plugin-driven server agent designed by InfluxData for collecting, processing, aggregating, and writing metrics. With over 300 plug-and-play input plugins—including native SNMP, MQTT Consumer, Cisco Model-Driven Telemetry, and IPMI—it serves as the backbone data collector for modern network and IoT monitoring. 🔌📈
 * **Best for:** High-performance metric collection across SNMP, MQTT, network switches, and edge IoT devices.
 
 ### NetBox
-[![GitHub stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers)
 * **Repository:** [netbox-community/netbox](https://github.com/netbox-community/netbox) 📦
 * **Stack:** Python / Django / PostgreSQL / Redis | **License:** Apache-2.0 📜
 * **Overview:** NetBox is the industry-standard Network Source of Truth (NSoT) and Infrastructure Resource Management (DCIM/IPAM) application. It models physical and virtual networks, IP address allocations, rack elevations, cable paths, and device configurations with native REST and GraphQL APIs designed to power modern network automation workflows. 🗺️🔌
 * **Best for:** IP address management (IPAM), datacenter infrastructure modeling (DCIM), and network automation source-of-truth architectures.
 
 ### EMQX
-[![GitHub stars](https://img.shields.io/github/stars/emqx/emqx?style=social&color=white)](https://github.com/emqx/emqx/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/emqx/emqx?style=social&color=white)](https://github.com/emqx/emqx/stargazers)
 * **Repository:** [emqx/emqx](https://github.com/emqx/emqx) 📦
 * **Stack:** Erlang / Elixir / C | **License:** Apache-2.0 📜
 * **Overview:** EMQX is an ultra-scalable, open-source distributed MQTT broker designed for IoT, IIoT, and connected vehicles. Powered by the Erlang/OTP runtime, it handles up to 100M+ concurrent MQTT connections and throughput of 1M+ messages per second per cluster with sub-millisecond latency and a built-in SQL-based data integration rule engine. 🏎️💨
 * **Best for:** High-throughput, distributed IoT messaging, real-time vehicle-to-cloud telemetry, and industrial edge-to-cloud gateways.
 
 ### ntopng
-[![GitHub stars](https://img.shields.io/github/stars/ntop/ntopng?style=social&color=white)](https://github.com/ntop/ntopng/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ntop/ntopng?style=social&color=white)](https://github.com/ntop/ntopng/stargazers)
 * **Repository:** [ntop/ntopng](https://github.com/ntop/ntopng) 📦
 * **Stack:** C++ / Lua / C | **License:** GPL-3.0 📜
 * **Overview:** ntopng is a high-speed web-based network traffic analysis and flow monitoring tool based on libpcap. It provides Layer 7 application protocol discovery using nDPI deep packet inspection, real-time bandwidth consumption analytics, cybersecurity risk indicators, and SNMP device telemetry integration. 🌐🛡️
 * **Best for:** Real-time deep packet inspection (DPI), flow monitoring (NetFlow/sFlow/IPFIX), and network traffic forensics.
 
 ### Zabbix
-[![GitHub stars](https://img.shields.io/github/stars/zabbix/zabbix?style=social&color=white)](https://github.com/zabbix/zabbix/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/zabbix/zabbix?style=social&color=white)](https://github.com/zabbix/zabbix/stargazers)
 * **Repository:** [zabbix/zabbix](https://github.com/zabbix/zabbix) 📦
 * **Stack:** C / PHP / MySQL / PostgreSQL | **License:** GPL-2.0 📜
 * **Overview:** Zabbix is an enterprise-grade distributed network and server monitoring solution. It provides agentless network polling (SNMP v1/v2c/v3, IPMI, JMX) as well as lightweight native agents for OS-level metrics. It features automated network discovery, distributed proxy nodes for secure multi-site monitoring, and zero licensing restrictions on device counts. 🛡️🖥️
 * **Best for:** Organizations needing an all-in-one, highly scalable monitoring appliance capable of replacing commercial suites without per-device license costs.
 
 ### LibreNMS
-[![GitHub stars](https://img.shields.io/github/stars/librenms/librenms?style=social&color=white)](https://github.com/librenms/librenms/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/librenms/librenms?style=social&color=white)](https://github.com/librenms/librenms/stargazers)
 * **Repository:** [librenms/librenms](https://github.com/librenms/librenms) 📦
 * **Stack:** PHP / Laravel / MySQL / Python | **License:** GPL-3.0 📜
 * **Overview:** LibreNMS is a community-driven, auto-discovering network monitoring system with hardware support for 10,000+ devices. It leverages CDP, FDP, LLDP, OSPF, and BGP protocols to autonomously map topologies and generate network weather maps. It features a modern web dashboard, native alert dispatchers (Slack, PagerDuty, Webhooks), and a comprehensive REST API. 🔍📊
 * **Best for:** Network administrators seeking instant zero-touch auto-discovery of switches, routers, firewalls, and access points.
 
 ### Checkmk Raw
-[![GitHub stars](https://img.shields.io/github/stars/Checkmk/checkmk?style=social&color=white)](https://github.com/Checkmk/checkmk/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Checkmk/checkmk?style=social&color=white)](https://github.com/Checkmk/checkmk/stargazers)
 * **Repository:** [Checkmk/checkmk](https://github.com/Checkmk/checkmk) 📦
 * **Stack:** Python / C++ | **License:** GPL-2.0 (Raw Edition) 📜
 * **Overview:** Checkmk utilizes a declarative, rule-based approach to infrastructure monitoring. Its custom Nagios-compatible core and optimized micro-core allow administrators to manage thousands of servers and network devices through centralized rules rather than manual host-by-host configuration. ⚙️⏱️
 * **Best for:** Fast rule-driven monitoring setups across hybrid servers, applications, and SNMP devices with minimal configuration toil.
 
 ### Icinga 2
-[![GitHub stars](https://img.shields.io/github/stars/Icinga/icinga2?style=social&color=white)](https://github.com/Icinga/icinga2/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Icinga/icinga2?style=social&color=white)](https://github.com/Icinga/icinga2/stargazers)
 * **Repository:** [Icinga/icinga2](https://github.com/Icinga/icinga2) 📦
 * **Stack:** C++ / PHP | **License:** GPL-2.0 📜
 * **Overview:** Icinga 2 is a modern, modular open-source monitoring framework with a multi-threaded C++ engine. It features a domain-specific configuration language, distributed clustering for high availability and load distribution, and REST API support for dynamic monitoring automation. 🎯🔗
 * **Best for:** Complex enterprise networks requiring distributed high-availability monitoring clusters and flexible rule-based automation.
 
 ### OpenRemote
-[![GitHub stars](https://img.shields.io/github/stars/openremote/openremote?style=social&color=white)](https://github.com/openremote/openremote/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/openremote/openremote?style=social&color=white)](https://github.com/openremote/openremote/stargazers)
 * **Repository:** [openremote/openremote](https://github.com/openremote/openremote) 📦
 * **Stack:** Java / TypeScript / Docker | **License:** AGPL-3.0 📜
 * **Overview:** OpenRemote is an open-source IoT platform designed for smart city, energy, and fleet management applications. It offers protocol connectivity across MQTT, HTTP, and KNX, automated asset tracking, custom rule generation via When-Then statements, and an integrated visual dashboard designer. 🏙️🔋
 * **Best for:** Smart energy microgrids, connected city fleets, building management, and multi-tenant asset tracking.
 
 ### Nagios Core
-[![GitHub stars](https://img.shields.io/github/stars/NagiosEnterprises/nagioscore?style=social&color=white)](https://github.com/NagiosEnterprises/nagioscore/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/NagiosEnterprises/nagioscore?style=social&color=white)](https://github.com/NagiosEnterprises/nagioscore/stargazers)
 * **Repository:** [NagiosEnterprises/nagioscore](https://github.com/NagiosEnterprises/nagioscore) 📦
 * **Stack:** C | **License:** GPL-2.0 📜
 * **Overview:** Nagios Core is the foundational open-source architecture for network host and service monitoring. It features an event-driven scheduler, extensive alerting channels, and thousands of community plugins available via Nagios Exchange for checking any protocol, network port, or hardware attribute. 🚦🔔
 * **Best for:** Battle-tested server and host availability checks with an extensive ecosystem of community-developed plugins.
 
 ### Cacti
-[![GitHub stars](https://img.shields.io/github/stars/Cacti/cacti?style=social&color=white)](https://github.com/Cacti/cacti/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Cacti/cacti?style=social&color=white)](https://github.com/Cacti/cacti/stargazers)
 * **Repository:** [Cacti/cacti](https://github.com/Cacti/cacti) 📦
 * **Stack:** PHP / MySQL / RRDTool | **License:** GPL-2.0 📜
 * **Overview:** Cacti is a network graphing and performance trending solution that uses RRDTool's data logging and graphing system. It excels at periodic SNMP polling of network interface bandwidth, packet rates, CPU loads, and environmental sensors, offering detailed time-series graphs and template management. 📈📉
 * **Best for:** Long-term bandwidth tracking, ISP capacity planning, and historical SNMP performance graphing.
 
 ### OpenNMS
-[![GitHub stars](https://img.shields.io/github/stars/OpenNMS/opennms?style=social&color=white)](https://github.com/OpenNMS/opennms/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/OpenNMS/opennms?style=social&color=white)](https://github.com/OpenNMS/opennms/stargazers)
 * **Repository:** [OpenNMS/opennms](https://github.com/OpenNMS/opennms) 📦
 * **Stack:** Java / PostgreSQL / TimescaleDB | **License:** AGPL-3.0 📜
 * **Overview:** OpenNMS Horizon is an enterprise-scale, event-driven network management platform built for large carrier networks and distributed enterprise estates (10,000+ nodes). It features an event processing pipeline, streaming telemetry ingestion, and deep integrations with ITSM and ticketing platforms. 🌐📡
 * **Best for:** Telecom operators, ISPs, and massive enterprise fleets requiring scalable event-driven incident reduction.
 
 ### NetXMS
-[![GitHub stars](https://img.shields.io/github/stars/netxms/netxms?style=social&color=white)](https://github.com/netxms/netxms/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/netxms/netxms?style=social&color=white)](https://github.com/netxms/netxms/stargazers)
 * **Repository:** [netxms/netxms](https://github.com/netxms/netxms) 📦
 * **Stack:** C++ / Java | **License:** GPL-2.0 📜
 * **Overview:** NetXMS is an integrated network and server management system noted for its first-class native Windows support. Its object-based hierarchy enables business service modeling (linking databases, web servers, and network firewalls to customer-facing SLAs), while supporting automated Layer 2/3 topology discovery and remote proxy agents. 💻🌲
 * **Best for:** Heterogeneous environments requiring deep Windows server instrumentation alongside standard SNMP switch and router monitoring.
 
 ### Eclipse Kapua
-[![GitHub stars](https://img.shields.io/github/stars/eclipse-kapua/kapua?style=social&color=white)](https://github.com/eclipse-kapua/kapua/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/eclipse-kapua/kapua?style=social&color=white)](https://github.com/eclipse-kapua/kapua/stargazers)
 * **Repository:** [eclipse-kapua/kapua](https://github.com/eclipse-kapua/kapua) 📦
 * **Stack:** Java / OSGi / OpenShift | **License:** EPL-1.0 📜
 * **Overview:** Eclipse Kapua is an open-source modular IoT cloud platform governed by the Eclipse Foundation. It provides core services for managing edge device lifecycles, remote configurations, telemetry data routing, and fine-grained access control with native Eclipse Kura gateway integration. ☁️🧩
 * **Best for:** Modular edge-to-cloud device management built within the Eclipse IoT ecosystem.
 
 ### FIWARE Orion
-[![GitHub stars](https://img.shields.io/github/stars/telefonicaid/fiware-orion?style=social&color=white)](https://github.com/telefonicaid/fiware-orion/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/telefonicaid/fiware-orion?style=social&color=white)](https://github.com/telefonicaid/fiware-orion/stargazers)
 * **Repository:** [telefonicaid/fiware-orion](https://github.com/telefonicaid/fiware-orion) 📦
 * **Stack:** C++ / MongoDB | **License:** AGPL-3.0 📜
 * **Overview:** FIWARE Orion is the flagship NGSI-v2 context broker implementation for the FIWARE European open-source smart city and IoT framework. It enables real-time context management, publish/subscribe notifications, and IoT agent protocol translations across cross-domain deployments. 🏛️🇪🇺
@@ -274,7 +274,7 @@ Contributions are welcome! If you know of an outstanding open-source Network Man
 ### Contribution Guidelines:
 1. Ensure the project is **genuinely open-source** with a permissive or copyleft license (GPL, Apache, MIT, EPL, AGPL).
 2. The project must be **actively maintained** with commits or releases within the past 12 months.
-3. Include the project's repository link, technology stack, star count badge, license, and 1–2 sentences explaining what makes it stand out.
+3. Include the project's repository link, technology stack, Stars_Count badge, license, and 1–2 sentences explaining what makes it stand out.
 
 ---
 
