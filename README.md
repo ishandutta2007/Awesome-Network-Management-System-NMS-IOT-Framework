@@ -6,7 +6,10 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework?style=flat-square&logo=github" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework?style=flat-square&logo=github" alt="GitHub forks"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square" alt="License: CC0 1.0"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -23,22 +26,27 @@
 - [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
 - [🟩 Open-Source Software](#-open-source-software)
+  - [Grafana 📊](#grafana)
+  - [Prometheus ⏱️](#prometheus)
+  - [Node-RED 🔀](#node-red)
   - [ThingsBoard 📱](#thingsboard)
+  - [Telegraf 🔌](#telegraf)
   - [NetBox 🗺️](#netbox)
   - [EMQX ⚡](#emqx)
+  - [ntopng 🌐](#ntopng)
   - [Zabbix 🛡️](#zabbix)
   - [LibreNMS 🔍](#librenms)
   - [Checkmk Raw ⚙️](#checkmk-raw)
   - [Icinga 2 🎯](#icinga-2)
   - [OpenRemote 🏙️](#openremote)
   - [Nagios Core 🚦](#nagios-core)
-  - [Cacti 📊](#cacti)
+  - [Cacti 📈](#cacti)
   - [OpenNMS 🌐](#opennms)
   - [NetXMS 💻](#netxms)
   - [Eclipse Kapua ☁️](#eclipse-kapua)
   - [FIWARE Orion 🏛️](#fiware-orion)
 - [📊 Comparison at a Glance](#-comparison-at-a-glance)
-- [⭐ Star History](#-star-history)
+- [📈 Star History](#-star-history)
 - [💖 Support & Sponsorship](#-support--sponsorship)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
@@ -49,7 +57,7 @@
 
 The global Network Management System (NMS) and IoT software market is currently valued between **$10 billion and $12.3 billion** and is projected to surpass **$25 billion by 2034**, expanding at a steady Compound Annual Growth Rate (CAGR) of **~9.5%–10.2%**. 🚀
 
-The sector displays a **moderately consolidated structure at the top enterprise tier**—dominated by large publicly traded and institutional observability/networking titans (such as Datadog, Cisco, and SolarWinds)—while remaining **highly fragmented across mid-market, edge, and specialized verticals**. In particular, specialized open-source platforms and agile private vendors capture significant market share across on-premises enterprise networks, telecommunications, and industrial IoT deployments where data sovereignty, SNMP extensibility, and custom telemetry are paramount. 🏢🔌
+The sector displays a **moderately consolidated structure at the top enterprise tier**—dominated by large publicly traded and institutional observability/networking titans (such as Cisco, Datadog, and SolarWinds)—while remaining **highly fragmented across mid-market, edge, and specialized verticals**. In particular, specialized open-source platforms and agile private vendors capture significant market share across on-premises enterprise networks, telecommunications, and industrial IoT deployments where data sovereignty, SNMP extensibility, and custom telemetry are paramount. 🏢🔌
 
 ---
 
@@ -59,6 +67,7 @@ Commercial, cloud-hosted Network Management, Infrastructure Observability, and I
 
 | Platform | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limit | Key Focus & Strengths |
 | :--- | :--- | :--- | :--- | :--- |
+| **[Cisco ThousandEyes](https://www.thousandeyes.com/)** 👁️ | **~$235B Market Cap** (~$54B TTM Revenue, Cisco Systems) | **$300/month** ($3,600/year annual commit for enterprise network and cloud agent starter allocation) | **15-day free trial** with full platform capabilities, 1,000 test credits, Internet Outage Map access, and enterprise agent deployments (no credit card required) | Global internet intelligence, synthetic hop-by-hop BGP route tracking, CDN benchmarking, and multi-cloud WAN visibility. 🌐 |
 | **[Datadog Network Monitoring](https://www.datadoghq.com/product/network-monitoring/)** 🐶 | **~$65B Market Cap** (~$4.3B TTM Revenue) | **$5.00/host/month** (Cloud Network Monitoring) or **$7.00/device/month** (Network Device Monitoring; billed annually) | **14-day free trial** with full access to all features (no credit card required); permanent free tier is limited to basic infrastructure (max 5 hosts, 1-day metric retention, no deep network flow analysis) | Cloud-native network observability, SNMP hardware metrics, NetFlow/IPFIX analysis, and end-to-end tracing correlated with full-stack logs and APM. ☁️ |
 | **[ManageEngine OpManager](https://www.manageengine.com/network-monitoring/)** 🏢 | **~$12B+ Zoho Valuation** (~$580M+ Division Revenue) | **$95/year** (Standard Edition for up to 10 devices) or **$245/year** (Professional Edition for up to 10 devices) | **Permanent Free Edition** limited to a maximum of **3 network devices** with basic performance monitors and email alerts; 30-day fully functional unlimited free trial available | Integrated network, server, switch, and router management with preconfigured SNMP performance monitors and automated configuration backups. 🔄 |
 | **[SolarWinds NPM](https://www.solarwinds.com/network-performance-monitor)** ☀️ | **~$3.2B Valuation** (~$797M ARR, Taken Private by Turn/River) | **$2,829** (perpetual base license) or **$8.00/node/month** (subscription model) | **30-day free trial** with 100% full functionality across all features, intelligent discovery, NetPath hop-by-hop analysis, and custom alerting (no credit card required) | Enterprise gold standard for multi-vendor network health, fault detection, hop-by-hop NetPath packet inspection, and capacity planning. 🔍 |
@@ -71,12 +80,40 @@ Commercial, cloud-hosted Network Management, Infrastructure Observability, and I
 
 Self-hosted, community-governed Network Management Systems, Infrastructure Observability suites, and IoT Orchestration Frameworks. Sorted by GitHub star count in descending order: 🌟🛠️
 
+### Grafana
+[![GitHub stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers)
+* **Repository:** [grafana/grafana](https://github.com/grafana/grafana) 📦
+* **Stack:** TypeScript / Go | **License:** AGPL-3.0 📜
+* **Overview:** Grafana is the open-source analytics and interactive visualization web application. It connects natively to Prometheus, InfluxDB, Elasticsearch, and SNMP telemetry collectors, allowing network engineers and IoT architects to compose dynamic multi-tenant dashboards and threshold-based alerts across heterogeneous data stores. 📊✨
+* **Best for:** Centralized visualization dashboards, multi-source observability, and cross-platform metric correlation.
+
+### Prometheus
+[![GitHub stars](https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white)](https://github.com/prometheus/prometheus/stargazers)
+* **Repository:** [prometheus/prometheus](https://github.com/prometheus/prometheus) 📦
+* **Stack:** Go | **License:** Apache-2.0 📜
+* **Overview:** Prometheus is a CNCF-graduated open-source monitoring system and time-series database. Using a pull-based HTTP model, it polls targets via exporters (including SNMP Exporter and Blackbox Exporter), evaluates PromQL expressions, and dispatches real-time alerts via Alertmanager. ⏱️🚨
+* **Best for:** Cloud-native time-series metric collection, SNMP exporter polling, and PromQL-based alerting rules.
+
+### Node-RED
+[![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)
+* **Repository:** [node-red/node-red](https://github.com/node-red/node-red) 📦
+* **Stack:** JavaScript / Node.js | **License:** Apache-2.0 📜
+* **Overview:** Node-RED is a low-code visual programming tool developed by the OpenJS Foundation for wiring together hardware devices, APIs, and online services. Its browser-based flow editor makes it an industry staple for connecting IoT sensor streams, Modbus/OPC-UA industrial controllers, and network webhook integrations. 🔀🎛️
+* **Best for:** Low-code IoT workflow wiring, Modbus/MQTT protocol translation, and event-driven automation pipelines.
+
 ### ThingsBoard
 [![GitHub stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers)
 * **Repository:** [thingsboard/thingsboard](https://github.com/thingsboard/thingsboard) 📦
 * **Stack:** Java / PostgreSQL / Cassandra / Hybrid | **License:** Apache-2.0 📜
 * **Overview:** ThingsBoard is the most popular open-source IoT platform for device management, data collection, processing, and real-time visualization. It supports industry-standard protocols including MQTT, CoAP, and HTTP, scaling horizontally to millions of devices with fault-tolerant clustering, customizable RPC remote control, and a drag-and-drop rule engine for event workflows. 📱⚡
 * **Best for:** Scalable IoT device orchestration, telemetry ingestion, digital twin tracking, and smart telemetry dashboards.
+
+### Telegraf
+[![GitHub stars](https://img.shields.io/github/stars/influxdata/telegraf?style=social&color=white)](https://github.com/influxdata/telegraf/stargazers)
+* **Repository:** [influxdata/telegraf](https://github.com/influxdata/telegraf) 📦
+* **Stack:** Go | **License:** MIT 📜
+* **Overview:** Telegraf is a plugin-driven server agent designed by InfluxData for collecting, processing, aggregating, and writing metrics. With over 300 plug-and-play input plugins—including native SNMP, MQTT Consumer, Cisco Model-Driven Telemetry, and IPMI—it serves as the backbone data collector for modern network and IoT monitoring. 🔌📈
+* **Best for:** High-performance metric collection across SNMP, MQTT, network switches, and edge IoT devices.
 
 ### NetBox
 [![GitHub stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers)
@@ -91,6 +128,13 @@ Self-hosted, community-governed Network Management Systems, Infrastructure Obser
 * **Stack:** Erlang / Elixir / C | **License:** Apache-2.0 📜
 * **Overview:** EMQX is an ultra-scalable, open-source distributed MQTT broker designed for IoT, IIoT, and connected vehicles. Powered by the Erlang/OTP runtime, it handles up to 100M+ concurrent MQTT connections and throughput of 1M+ messages per second per cluster with sub-millisecond latency and a built-in SQL-based data integration rule engine. 🏎️💨
 * **Best for:** High-throughput, distributed IoT messaging, real-time vehicle-to-cloud telemetry, and industrial edge-to-cloud gateways.
+
+### ntopng
+[![GitHub stars](https://img.shields.io/github/stars/ntop/ntopng?style=social&color=white)](https://github.com/ntop/ntopng/stargazers)
+* **Repository:** [ntop/ntopng](https://github.com/ntop/ntopng) 📦
+* **Stack:** C++ / Lua / C | **License:** GPL-3.0 📜
+* **Overview:** ntopng is a high-speed web-based network traffic analysis and flow monitoring tool based on libpcap. It provides Layer 7 application protocol discovery using nDPI deep packet inspection, real-time bandwidth consumption analytics, cybersecurity risk indicators, and SNMP device telemetry integration. 🌐🛡️
+* **Best for:** Real-time deep packet inspection (DPI), flow monitoring (NetFlow/sFlow/IPFIX), and network traffic forensics.
 
 ### Zabbix
 [![GitHub stars](https://img.shields.io/github/stars/zabbix/zabbix?style=social&color=white)](https://github.com/zabbix/zabbix/stargazers)
@@ -122,7 +166,7 @@ Self-hosted, community-governed Network Management Systems, Infrastructure Obser
 
 ### OpenRemote
 [![GitHub stars](https://img.shields.io/github/stars/openremote/openremote?style=social&color=white)](https://github.com/openremote/openremote/stargazers)
-* **Repository:** [openremote/core](https://github.com/openremote/core) 📦
+* **Repository:** [openremote/openremote](https://github.com/openremote/openremote) 📦
 * **Stack:** Java / TypeScript / Docker | **License:** AGPL-3.0 📜
 * **Overview:** OpenRemote is an open-source IoT platform designed for smart city, energy, and fleet management applications. It offers protocol connectivity across MQTT, HTTP, and KNX, automated asset tracking, custom rule generation via When-Then statements, and an integrated visual dashboard designer. 🏙️🔋
 * **Best for:** Smart energy microgrids, connected city fleets, building management, and multi-tenant asset tracking.
@@ -175,23 +219,29 @@ Self-hosted, community-governed Network Management Systems, Infrastructure Obser
 
 | Software | License | Primary Focus | SNMP Polling | IoT Telemetry | Self-Hosted | Target User / Primary Use Case |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- |
+| **Cisco ThousandEyes** 👁️ | Proprietary | Internet & Cloud Intelligence | ✅ | ⚠️ API | SaaS | Enterprise WAN/BGP tracking and cloud application delivery |
 | **Datadog NPM** 🐶 | Proprietary | Cloud & Network Observability | ✅ | ⚠️ API | SaaS | Enterprise DevOps and cloud-native network tracing |
-| **SolarWinds NPM** ☀️ | Proprietary | Enterprise Network Monitoring | ✅ | ❌ | Hybrid | Network Operations Centers (NOC) & enterprise LAN/WAN |
 | **ManageEngine OpManager** 🏢 | Proprietary | Unified Infrastructure Monitoring | ✅ | ❌ | Hybrid | Mid-market IT teams managing multi-vendor hardware |
+| **SolarWinds NPM** ☀️ | Proprietary | Enterprise Network Monitoring | ✅ | ❌ | Hybrid | Network Operations Centers (NOC) & enterprise LAN/WAN |
 | **LogicMonitor** 🧠 | Proprietary | SaaS Infrastructure Monitoring | ✅ | ⚠️ API | SaaS | MSPs and hybrid cloud environments wanting AIOps |
 | **PRTG Monitor** 🚦 | Proprietary | Sensor-Based IT Monitoring | ✅ | ⚠️ Basic | On-prem/Cloud | Small to mid-market IT admins preferring Windows setups |
+| **Grafana** 📊 | AGPL-3.0 | Observability Visualization | ⚠️ Exporter | ✅ Native | ✅ Yes | Unified operational dashboards and multi-source analytics |
+| **Prometheus** ⏱️ | Apache-2.0 | Time-Series Metrics & Alerts | ✅ Exporter | ✅ Native | ✅ Yes | Cloud-native metric scrapers and PromQL rule engines |
+| **Node-RED** 🔀 | Apache-2.0 | Low-Code Event Flow Wiring | ⚠️ Contrib | ✅ Native | ✅ Yes | Edge IoT gateway protocol translation and rapid workflows |
 | **ThingsBoard** 📱 | Apache-2.0 | IoT Device Orchestration | ⚠️ Custom | ✅ Native | ✅ Yes | Production IoT device fleets, MQTT routing, and dashboards |
+| **Telegraf** 🔌 | MIT | Metric Collection Agent | ✅ Native | ✅ Native | ✅ Yes | High-performance edge agent collecting SNMP and IoT feeds |
 | **NetBox** 🗺️ | Apache-2.0 | DCIM & IPAM (NSoT) | ❌ | ❌ | ✅ Yes | Network automation engineers and DCIM infrastructure mapping |
 | **EMQX** ⚡ | Apache-2.0 | Distributed MQTT Broker | ❌ | ✅ Native | ✅ Yes | High-throughput connected vehicles and industrial telemetry |
-| **Zabbix** 🛡️ | GPL-2.0 | All-in-One NMS & Server Monitoring | ✅ | ⚠️ Extensible | ✅ Yes | Enterprise sysadmins seeking complete no-license-cost monitoring |
-| **LibreNMS** 🔍 | GPL-3.0 | Network Auto-Discovery | ✅ | ❌ | ✅ Yes | Fast zero-config router and switch topology mapping |
-| **Checkmk Raw** ⚙️ | GPL-2.0 | Rule-Based Infrastructure Monitor | ✅ | ❌ | ✅ Yes | System admins needing fast rule-based metric alerts |
-| **Icinga 2** 🎯 | GPL-2.0 | Distributed Host & Service Monitor | ✅ | ❌ | ✅ Yes | Scalable, high-availability monitoring cluster setups |
+| **ntopng** 🌐 | GPL-3.0 | Flow & Deep Packet Analysis | ✅ Native | ⚠️ Basic | ✅ Yes | Real-time traffic inspection, bandwidth flow, and security |
+| **Zabbix** 🛡️ | GPL-2.0 | All-in-One NMS & Server Monitoring | ✅ Native | ⚠️ Extensible | ✅ Yes | Enterprise sysadmins seeking complete no-license-cost monitoring |
+| **LibreNMS** 🔍 | GPL-3.0 | Network Auto-Discovery | ✅ Native | ❌ | ✅ Yes | Fast zero-config router and switch topology mapping |
+| **Checkmk Raw** ⚙️ | GPL-2.0 | Rule-Based Infrastructure Monitor | ✅ Native | ❌ | ✅ Yes | System admins needing fast rule-based metric alerts |
+| **Icinga 2** 🎯 | GPL-2.0 | Distributed Host & Service Monitor | ✅ Native | ❌ | ✅ Yes | Scalable, high-availability monitoring cluster setups |
 | **OpenRemote** 🏙️ | AGPL-3.0 | Smart City & Asset IoT Management | ⚠️ Custom | ✅ Native | ✅ Yes | Microgrids, smart municipal energy, and fleet telematics |
-| **Nagios Core** 🚦 | GPL-2.0 | Host & Port Availability Checks | ✅ | ❌ | ✅ Yes | Lightweight availability pings and custom plugin checks |
-| **Cacti** 📊 | GPL-2.0 | SNMP Bandwidth Graphing | ✅ | ❌ | ✅ Yes | Long-term bandwidth tracking and ISP interface utilization |
-| **OpenNMS** 🌐 | AGPL-3.0 | Carrier-Scale Event Processing | ✅ | ⚠️ Kafka | ✅ Yes | Telecommunications providers and large distributed estates |
-| **NetXMS** 💻 | GPL-2.0 | Windows & Network Monitoring | ✅ | ⚠️ Basic | ✅ Yes | Windows-heavy shops needing service SLA dependency trees |
+| **Nagios Core** 🚦 | GPL-2.0 | Host & Port Availability Checks | ✅ Plugins | ❌ | ✅ Yes | Lightweight availability pings and custom plugin checks |
+| **Cacti** 📈 | GPL-2.0 | SNMP Bandwidth Graphing | ✅ Native | ❌ | ✅ Yes | Long-term bandwidth tracking and ISP interface utilization |
+| **OpenNMS** 🌐 | AGPL-3.0 | Carrier-Scale Event Processing | ✅ Native | ⚠️ Kafka | ✅ Yes | Telecommunications providers and large distributed estates |
+| **NetXMS** 💻 | GPL-2.0 | Windows & Network Monitoring | ✅ Native | ⚠️ Basic | ✅ Yes | Windows-heavy shops needing service SLA dependency trees |
 | **Eclipse Kapua** ☁️ | EPL-1.0 | Modular IoT Cloud Platform | ❌ | ✅ Native | ✅ Yes | Eclipse Kura edge gateway integrations and device provisioning |
 | **FIWARE Orion** 🏛️ | AGPL-3.0 | NGSI Context Broker | ❌ | ✅ Native | ✅ Yes | Smart city IoT infrastructures following European standards |
 
@@ -199,7 +249,7 @@ Self-hosted, community-governed Network Management Systems, Infrastructure Obser
 
 ## 📈 Star History
 
-[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Network-Management-System-NMS-IOT-Framework&type=date&legend=top-left)
 
 ---
 
