@@ -78,7 +78,7 @@ Commercial, cloud-hosted Network Management, Infrastructure Observability, and I
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-governed Network Management Systems, Infrastructure Observability suites, and IoT Orchestration Frameworks. Sorted by GitHub Stars_Count in descending order: 🌟🛠️
+Self-hosted, community-governed Network Management Systems, Infrastructure Observability suites, and IoT Orchestration Frameworks. Sorted by GitHub_Stars_Count in descending order: 🌟🛠️
 
 ### Grafana
 [![GitHub_Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers)
